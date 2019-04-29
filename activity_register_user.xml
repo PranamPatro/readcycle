@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterUser">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New User Registration"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="12"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/status"
+                android:hint="FIRST NAME"
+                android:id="@+id/fnameregister"
+                android:textColorHint="@color/status"
+                android:textAllCaps="true"
+                android:maxLength="20"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/status"
+                android:hint="LAST NAME"
+                android:id="@+id/lnameregister"
+                android:textColorHint="@color/status"
+                android:textAllCaps="true"
+                android:maxLength="20"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/status"
+                android:hint="Email Id"
+                android:id="@+id/phoneregister"
+                android:textColorHint="@color/status"
+                android:textAllCaps="true"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/status"
+                android:hint="6Digit PIN"
+                android:id="@+id/pinregister"
+                android:textColorHint="@color/status"
+                android:textAllCaps="true"
+                android:maxLength="6"
+                android:inputType="textPassword"/>
+            <Button
+                android:id="@+id/proceedonregister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="PROCEED"
+                android:textColor="#fff"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/buttonround"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
